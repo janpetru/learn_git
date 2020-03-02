@@ -55,6 +55,12 @@
 4. Add branch
     1. git branch [branchName]  //Add branch to "Local Repository". "Working area" and "Staging area" don't care. 
     2. git checkout develop //Switch bettween branches
+        1. git checkout -b change_alice //Creates branch and switch to it
+    3. git branch -a //list branches
+    4. Change file created before and go ADD -> COMMIT -> PUSH
+
+### Merging
+5. Merging branches
 
 ## GIT FLOW
 1. Add branch
