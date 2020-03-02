@@ -42,6 +42,7 @@
         4. git diff [file]
     2. git add [file]
         1. git diff --name-only --cached //changes between the index and your last commit and Show only names of changed files.
+        2. git add file-name-1 file-name-2 file-name-3
     3. git commit -m "message"
         1. git log --pretty=oneline
         2. git log --pretty=format:"%h - %an, %ar : %s"
@@ -51,7 +52,9 @@
     4. git push 
 
 ### Branching
-// TODO
+4. Add branch
+    1. git branch [branchName]  //Add branch to "Local Repository". "Working area" and "Staging area" don't care. 
+    2. git checkout develop //Switch bettween branches
 
 ## GIT FLOW
 1. Add branch
