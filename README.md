@@ -61,6 +61,9 @@
 
 ### Merging
 5. Merging branches
+    1. git checkout master
+    2. git merge develop
+    
 
 ## GIT FLOW
 1. Add branch
