@@ -63,7 +63,9 @@
     1. git branch [branchName]  //Add branch to "Local Repository". "Working area" and "Staging area" don't care. 
     2. git checkout develop //Switch bettween branches
         1. git checkout -b change_alice //Creates branch and switch to it
-    3. git branch -a //list branches
+    3. git branch -a //list all branches
+       1. git branch //list local
+       2. git branch -r //list remote
     4. Change file created before and go ADD -> COMMIT -> PUSH
 
 ### Merging
@@ -90,14 +92,13 @@
    5. git merge --no-ff --no-commit [branch]
 
 3. Add branch
-   1. Check changes
-      1. git fetch
-         1. git fetch origin
-         2. git fetch --all
+   1. git checkout [branch]
+   2. git pull
+      1. git fetch --all
       2. git pull
-   2. Add branch
-      1. git checkout -b [name]/test_feature_branch
-   3. Make changes
-4. 
+   3. git checkout -b [name]/[featureBranch]
 
-https://dev.to/bdbch/setting-up-ssh-and-git-on-windows-10-2khk
+### NEXT
+
+- colisions
+- cherry-picking
