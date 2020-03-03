@@ -1,39 +1,45 @@
 # learn_git
 
 ## Reading list
+
 - https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html
 - https://dev.to/unseenwizzard/learn-git-concepts-not-commands-4gjc
+- https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
+- https://datasift.github.io/gitflow/IntroducingGitFlow.html
+- https://nvie.com/posts/a-successful-git-branching-model/
 
+## First
 
-## First 
 0. Dev IDE (Visual Studio Code, ...)
 1. Install GIT 
-    1. https://git-scm.com/download/win
+    - https://git-scm.com/download/win
 2. Change Config on path C:\Users\User\.gitconfig
-    1. git config --global user.email “petrujanTest@gmail.com”  
-    2. git config --global user.name "Jan Petru"
+    - git config --global user.email “petrujanTest@gmail.com”  
+    - git config --global user.name "Jan Petru"
 
+## What is git
 
-## What is git?
 "Git is a distributed version-control system for tracking changes in source code during software development. It is designed for coordinating work among programmers, but it can be used to track changes in any set of files. Its goals include speed, data integrity, and support for distributed, non-linear workflows."
 
 - https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html
 - https://dev.to/unseenwizzard/learn-git-concepts-not-commands-4gjc
 
 - **Server**
-    - Remote repository
+  - Remote repository
 - **Dev environment**
-    - Local repository
-    - Staging area
-    - Working directory
+  - Local repository
+  - Staging area
+  - Working directory
 
 ## Try
 
 ### Clone
+
 3. Clone repository (Clone from "Remote repository" to "Working directory" and "Local repository"
     1. git clone https://github.com/airbally/learn_git
 
 ### Make change
+
 3. Add, commit, push
     1. Create file
         1. mkdir test01_[yourName]
@@ -52,6 +58,7 @@
     4. git push 
 
 ### Branching
+
 4. Add branch
     1. git branch [branchName]  //Add branch to "Local Repository". "Working area" and "Staging area" don't care. 
     2. git checkout develop //Switch bettween branches
@@ -60,14 +67,21 @@
     4. Change file created before and go ADD -> COMMIT -> PUSH
 
 ### Merging
+
 5. Merging branches
     1. git checkout master
     2. git merge develop
-    
 
 ## GIT FLOW
-1. Add branch
-2. Make changes
-3. 
+
+1. Check changes
+   1. git fetch
+      1. git fetch origin
+      2. git fetch --all
+   2. git pull
+2. Add branch
+   1. git checkout -b [name]/test_feature_branch
+3. Make changes
+4. 
 
 https://dev.to/bdbch/setting-up-ssh-and-git-on-windows-10-2khk
