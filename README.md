@@ -55,7 +55,8 @@
         3. git log --pretty=format:"%h %an %s" --graph //Display an ASCII graph of the branch and merge history beside the log output.
         4. git log --pretty=format:"%h %an %s"  --stat  //Show statistics for files modified in each commit.
         5. git log --since=2.weeks
-    4. git push 
+        6. git log --graph --decorate --pretty=oneline --abbrev-commit
+    4. git push
 
 ### Branching
 
