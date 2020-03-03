@@ -74,14 +74,30 @@
 
 ## GIT FLOW
 
-1. Check changes
-   1. git fetch
-      1. git fetch origin
-      2. git fetch --all
+- https://nvie.com/posts/a-successful-git-branching-model/
+
+1. Save way to merge
+   1. git checkout master
+   2. git pull origin master
+   3. git merge [branch]
+      1. git branch -d myfeature
+   4. git push origin master
+2. Suspecticting conflict in merge
+   1. git checkout [branch]
    2. git pull
-2. Add branch
-   1. git checkout -b [name]/test_feature_branch
-3. Make changes
+   3. git checkout master
+   4. git pull
+   5. git merge --no-ff --no-commit [branch]
+
+3. Add branch
+   1. Check changes
+      1. git fetch
+         1. git fetch origin
+         2. git fetch --all
+      2. git pull
+   2. Add branch
+      1. git checkout -b [name]/test_feature_branch
+   3. Make changes
 4. 
 
 https://dev.to/bdbch/setting-up-ssh-and-git-on-windows-10-2khk
